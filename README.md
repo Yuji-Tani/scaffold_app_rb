@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Yuji-Tani/scaffold_app_rb.svg?style=svg)](https://circleci.com/gh/Yuji-Tani/scaffold_app_rb)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
