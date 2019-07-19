@@ -13,7 +13,7 @@ jobs:
           RAILS_ENV: test
       - image: circleci/postgres:9.4.12-alpine
         environment:
-        - POSTGRES_USER=test
+        - POSTGRES_USER=scaffold_app
         - POSTGRES_DB=test
 
 
