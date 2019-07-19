@@ -9,13 +9,15 @@ jobs:
       # specify the version you desire here
       - image: circleci/ruby:2.6.3-node-browsers
         environment:
+          PGHOST: localhost
+          PGUSER: scaffold_app
           BUNDLER_VERSION: 2.0.1
           RAILS_ENV: test
       - image: circleci/postgres:9.4.12-alpine
         environment:
-        - POSTGRES_USER=scaffold_app
-        - POSTGRES_DB=test
-
+          POSTGRES_USER: scaffold_app
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: scaffold_app_test
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
